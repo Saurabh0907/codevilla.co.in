@@ -1,0 +1,58 @@
+JVM -> Interpretor for java. when we compile java code, it is converted to byte code. and then this byte code can be run on any machine and  is portable.
+Multithreaded, object oriented, platform independent, secure, uses remote method invocation -> it can call any method across the network.
+
+OOP Principles
+1. Abstraction -> for eg, human ignore the minute details of the car, all he knows is that a car exists, but doesnt know the details of brakes, suspension etc
+W shud know how the concepts transalte into programs, we do not have to know how they work behind.
+
+2. Encapuslation -> is binding the code and prevent the data from being accessed by outsiders. use private variables and methods.
+3. Inheritance -> is directly using the properties of other class
+4. polymorphism -> one interface, many methods.
+
+public static void main
+public -> access specifier, to be accessed by the code outside the class
+static -> allows main to be called without using any instantiation or object.
+
+Integer is 32 bit -> -2^32 to 2^32-1
+short 16,
+ byte 8 -> -128 to 127
+long - 64
+
+Java char is not same as c   char -> java char is 16 bit long -> for global portability -> unicode
+While type conversing -> destination type must be greater than the src type.
+byte b = (b*2) -> wrong, cannot give an int to byte
+byte b = (byte)(b*2);
+
+Garbage collection
+Java automatically collectes the unused variables. when no ref to an object exists and the object is no longer needed, then it is automatically collected by garbage collector
+
+protected void finalize() -> sometimes an object need to finally perform something, b4 getiing destroyed, for it, there is a finalize method.
+
+method overloading
+methods can be overloaded, use same name methods with diff return ype and different arguments.
+
+constructor overloading
+by using different type and number of parameters
+
+Call by value -> no changes to original parameters.
+Call by reference -> changes made in formal arguments are reflected to original ones
+
+Static -> Variables and methods declared static can be called without objects. . But method declared static can only access static variables.
+we can also create a static block, which is called only once.
+
+Final -> content of final variables cannot be modofoed, Final methods cannot be overridden. Final classes cannot be inherited.
+
+Inner class have access to all members of outer class, but reverse is not true. As inner class behaves as a member of class, so it can refer directly to other members. 
+Moreover if inner class is static, it has to use an object to call members of outer class.
+
+Varargs -> function(int ... v) -> any number of arguments can be passed in this method.
+
+super -> calls the respective constructor of superclass
+super.member -> to use a member variable of superclass
+
+constructors are called in the order of derivation.
+
+method overriding 
+abstract class -> when we provide only the structure and not the implementation.
+
+Interface -> It is used to make a class fully abstract.Interface must be declared public when we have to use it.
