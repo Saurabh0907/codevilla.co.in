@@ -28,7 +28,7 @@ else
 					{
 						background-image: url(img/black.jpeg);
 						background-position: center;
-						opacity:.20;
+						opacity:.04;
 						z-index:1001;
 						pointer-events:none;
 					}
@@ -98,6 +98,23 @@ else
 </head>
 <body>
 	
+<div class="navbar navbar-inverse navbar-fixed-top">
+   <div class="navbar-inner">
+       <div class="container">
+       
+           <a class="brand" style="color:#EFEFEF;margin-left:-15%;"><b>CodeVilla - A House where you can Code</b></a>
+           <div class="nav-collapse collapse">
+               <ul class="nav pull-right">
+                    <li><a id="register1" style="cursor:pointer;color:#EFEFEF;">Register</a></li>
+                    <li><a id="login1" style="cursor:pointer;color:#EFEFEF;">Login</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+	
 	<div class="filemanager" style="z-index:1000">
 
 		<div class="search">
@@ -115,12 +132,6 @@ else
 			<span>No files here.</span>
 		</div>
 
-	</div>
-	
-	<div class="login_div" style="z-index:1002">
-		<a id="login1" rel="icon"><img title="Login" alt="Login" height="60px" width="60px" src="img/login2.png" onmouseover="this.src='img/login1.png'" onmouseout="this.src='img/login2.png'" style="cursor:pointer"></img></a>&nbsp;&nbsp;
-		<a id="register1" rel="icon"><img title="Register" alt="Register" height="60px" width="60px" src="img/register2.png" onmouseover="this.src='img/register1.png'" onmouseout="this.src='img/register2.png'" style="cursor:pointer"></img></a>
-				
 	</div>
 	
 	
