@@ -17,6 +17,9 @@ if (isset($_SESSION['user_id']))
 			{
 				display:none;
 			}
+			
+			#login1{display:none;}
+			#logout{display:block;}
 			</style>";
 }
 else
@@ -43,7 +46,11 @@ else
 						margin-left:10%;
 						display: block;
 					}
-			
+					
+					#logout{display:none;}
+					#login1{display:block;}
+
+								
 			</style>";
 	
 }
@@ -101,12 +108,12 @@ else
 <div class="navbar navbar-inverse navbar-fixed-top">
    <div class="navbar-inner">
        <div class="container">
-       
-           <a class="brand" style="color:#EFEFEF;margin-left:-15%;"><b>CodeVilla - A House where you can Code</b></a>
+           <a class="brand" style="color:#EFEFEF;margin-left:-15%;"><img onclick="window.location.reload()" style="cursor:pointer;margin-top:-1%;" alt="Brand" src="img/c3.png">&nbsp<b>CodeVilla - A House where you can Code</b></a>
            <div class="nav-collapse collapse">
                <ul class="nav pull-right">
                     <li><a id="register1" style="cursor:pointer;color:#EFEFEF;">Register</a></li>
                     <li><a id="login1" style="cursor:pointer;color:#EFEFEF;">Login</a></li>
+                    <li><a id="logout" onclick="logout()" style="cursor:pointer;color:#EFEFEF;">Logout</a></li>
                </ul>
            </div>
        </div>
