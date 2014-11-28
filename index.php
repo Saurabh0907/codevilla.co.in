@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'Database_Connect1.php';
+include 'Database_Connect.php';
 
 if (isset($_SESSION['user_id']))
 {
@@ -56,7 +56,7 @@ else
 <head lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<title>CodeVilla - A House where you can code.</title>
 	<link href="css/br_styles.css" rel="stylesheet"/>
 	<link href="css/main.css" rel="stylesheet"/>
@@ -126,37 +126,23 @@ else
 	
 	<div class ="editor" style="z-index:1000">
 		<div class="field">
-			<input type="text" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
+			<input type="text" style="padding-top:20px;padding-bottom:20px;" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
 		</div>
 		<div class="field">
 			<textarea name="content" id="content" placeholder="Type your content here..."></textarea>
 		</div>
 		<div class="field">
 			<div id="container"></div>
-			<button id="but" onclick="call_drop()">Dropbox</button>
-			<button id="save_but" onclick="call_save()">Save</button>
-			<button id="clear_but" onclick="call_clear()">Clear</button>
+			<button id="but" class="btn btn-default" onclick="call_drop()">Dropbox</button>
+			<button id="save_but" class="btn btn-primary btn-sm" onclick="call_save()">Save</button>
+			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
 			<br>
-			<button id="logout" onclick="logout()">Logout</button>
+			<button id="logout" class="btn btn-default" onclick="logout()">Logout</button>
 		</div>
 	
 		
 	</div>
-	<!-- Include our script files -->
 	
-	<!--<script>
-	$.get("session/return_session.php",function(data)
-		{
-			if(data=="N_O_T_S_E_T")
-			{
-			document.getElementById('loadarea').src= 'script.js';
-			}
-			else
-			{
-			document.getElementById('loadarea').src= 'script.js';
-			}
-		});
-	</script>-->
 	
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/main.js"></script>	

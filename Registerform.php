@@ -48,7 +48,7 @@ input.text {
       
 	  font-size: 14px;
       width: 100%;
-      padding: 7px 8px 7px 30px;
+      padding: 15px 16px 15px 30px;
       color:#1d1711;
       
 }	  

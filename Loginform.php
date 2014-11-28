@@ -43,7 +43,7 @@ input.text {
       
 	  font-size: 14px;
       width: 100%;
-      padding: 7px 8px 7px 30px;
+      padding: 15px 16px 15px 30px;
       color:#1d1711;
       
 }	  
@@ -153,7 +153,7 @@ $(document).ready( function() {
 
  <form autocomplete="off" id="LoginUserForm" name="LoginUserForm" action="Login_Login_db.php" autocomplete="off">
  	<fieldset>
-        <p><input autocomplete="off" id="email" name="email" class="text" value="" placeholder="Email"/></p>
+        <p><input autocomplete="off" id="email" name="email" type="email" class="text"  value="" placeholder="Email"/></p>
         <p><input autocomplete="off" id="password" name="password" class="text" type="password" placeholder="Password"/></p>
                 
         <p>

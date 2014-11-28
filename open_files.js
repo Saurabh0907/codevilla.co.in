@@ -81,9 +81,10 @@ options = {
 						multiselect: false, // or true
 						extensions: ['.html', '.php', '.txt', '.c', '.cpp', '.java'],
 					};
-		$('#but').addClass('bg1');
-		var button = Dropbox.createChooseButton(options);
-		document.getElementById("container").appendChild(button);
+		//$('#but').addClass('bg1');
+		//var button = Dropbox.createChooseButton(options);
+		//document.getElementById("container").appendChild(button);
+		Dropbox.choose(options);
 		}
 		
 //GET LOCAL FILES
