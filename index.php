@@ -11,6 +11,8 @@ if (isset($_SESSION['user_id']))
 	echo "<style>
 			.overlay_div
 				{
+				background: linear-gradient(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.08)), url('img/fabric.png');
+				border-radius: 25px;
 				}
 				
 			.login_div
@@ -29,11 +31,12 @@ else
 	echo "<style>
 				.overlay_div
 					{
-						background-image: url(img/black.jpeg);
+					background: url('img/fabric.png');
 						background-position: center;
 						opacity:.04;
 						z-index:1001;
 						pointer-events:none;
+						
 					}
 					
 				.login_div
@@ -80,7 +83,20 @@ else
 		  background-position: center; 
 		}
 		
-		body{background: linear-gradient(rgba(118, 89, 89, 0.35), rgba(118, 89, 89, 0.35)), url('img/fabric.png');}
+		html,body{
+			height:100%;
+			background: linear-gradient(rgba(85, 84, 88, 0.2), rgba(93, 89, 108, 0.2)), url('img/fabric.png');
+		}
+		#sg:hover + #sgi{
+			display : block;
+			}
+		#gp:hover #gpi{
+			display : block;
+			}
+		#sm:hover #smi{
+			display : block;
+			}
+	
 	</style>
 	
 		<script>
@@ -155,8 +171,7 @@ else
 			<button id="save_but" class="btn btn-primary btn-sm" onclick="call_save()">Save</button>
 			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
 			<br>
-			<button id="logout" class="btn btn-default" onclick="logout()">Logout</button>
-		</div>
+			</div>
 	
 		
 	</div>
@@ -167,6 +182,28 @@ else
 	<script src="open_files.js"></script>
 	<script src="save_files.js"></script>
 	<script src="js/script.js"></script>
+
+<div class="navbar navbar-inverse navbar-fixed-bottom">
+   <div class="navbar-inner">
+       <div class="container">
+           <div class="nav-collapse collapse">
+               <ul class="nav pull-left"> 
+                    <li><a id="" style="cursor:pointer;color:#EFEFEF;"><b>Developers :</b></a></li>               
+                    <li><a id="gp" style="cursor:pointer;color:#EFEFEF;">Gaurav Pandvia</a></li>
+                    <li><a id="sg" style="cursor:pointer;color:#EFEFEF;">Saurabh Garg</a></li>
+                    <li><a id="sm" style="cursor:pointer;color:#EFEFEF;">Shikher Mishra</a></li>
+               </ul>
+               <ul class="nav pull-right">
+                    <li><a id="" style="cursor:pointer;color:#EFEFEF;"><b>Get Social :</b></a></li>               
+                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">FB</a></li>
+                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">GO</a></li>
+                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">Tw</a></li>
+               </ul>
+           </div>
+       </div>
+   </div>
+</div>
+
 	
 </body>
 <div id="fade_div"></div>
