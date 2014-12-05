@@ -202,6 +202,7 @@ else
 		</div>
 		<div class="field">
 			<textarea name="content" data-editor="javascript"  id="content" placeholder="Type your content here..."></textarea>
+			
 		</div>
 		<div class="field">
 			<div id="container"></div>

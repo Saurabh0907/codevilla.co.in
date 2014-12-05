@@ -32,8 +32,8 @@ options = {
 					
 					ajaxRequest.onreadystatechange = function(){
 						if(ajaxRequest.readyState == 4){
-							$('#content').removeClass('bg2');
-							document.getElementById('content').innerHTML = ajaxRequest.responseText;
+							$('.editor').removeClass('bg2');
+							editor.setValue(ajaxRequest.responseText);
 									}
 								}
 							document.getElementById('content').innerHTML = "";
@@ -43,7 +43,7 @@ options = {
 										link = link.slice(8,n);
 									}
 							$('#content').removeAttr('placeholder');
-							$('#content').addClass('bg2');
+							$('.editor').addClass('bg2');
 							
 							ajaxRequest.open("GET", "get_data.php?src="+link+"&type="+type+"/", true);	
 							ajaxRequest.send(null); 
