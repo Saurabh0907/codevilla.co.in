@@ -67,11 +67,13 @@ else
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
 	<title>CodeVilla - A House where you can code.</title>
 	<link href="css/br_styles.css" rel="stylesheet"/>
 	<link href="css/main.css" rel="stylesheet"/>
 	<script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="njoa4ck2yv5w7n7"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="acm/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
 	<style>
 		.bg1{
 			visibility: hidden;
@@ -87,21 +89,12 @@ else
 			height:100%;
 			background: linear-gradient(rgba(85, 84, 88, 0.2), rgba(93, 89, 108, 0.2)), url('img/fabric.png');
 		}
-		#sg:hover + #sgi{
-			display : block;
-			}
-		#gp:hover #gpi{
-			display : block;
-			}
-		#sm:hover #smi{
-			display : block;
-			}
-	
+		
 	</style>
 	
 		<script>
 		
-		//alert("Saurabh Garg");
+		
 		function call_clear()
 		{
 		document.getElementById('content').value = "";
@@ -117,7 +110,52 @@ else
 		}
 				
 		</script>
+		<script>
+			var editor;
+			  $(function () {
+        $('textarea[data-editor]').each(function () {
+            var textarea = $(this);
 
+            var mode = textarea.data('editor');
+
+            var editDiv = $('<div>', {
+                position: 'absolute',
+                width: textarea.width(),
+                height: textarea.height(),
+                'class': textarea.attr('class')
+            }).insertBefore(textarea);
+
+            textarea.css('display', 'none');
+
+            editor = ace.edit(editDiv[0]);
+            
+
+            editor.renderer.setShowGutter(true);
+            editor.getSession().setValue(textarea.val());
+            editor.getSession().setMode("ace/mode/" + mode);
+            // editor.setTheme("ace/theme/idle_fingers");
+
+            // copy back to textarea on form submit...
+            textarea.closest('form').submit(function () {
+                textarea.val(editor.getSession().getValue());
+            })
+      
+
+        });
+    });
+			</script>
+<script>
+		function selee() {
+		var theme=$("#select option:selected").text();
+		editor.setTheme("ace/theme/"+theme);
+	}
+		function selmod() {
+			var mode=$("#selectMode option:selected").text();
+			editor.getSession().setMode("ace/mode/" + mode);
+		}
+	
+
+</script>
 </head>
 <body>
 	
@@ -163,47 +201,81 @@ else
 			<input type="text" style="padding-top:20px;padding-bottom:20px;" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
 		</div>
 		<div class="field">
-			<textarea name="content" id="content" placeholder="Type your content here..."></textarea>
+			<textarea name="content" data-editor="javascript"  id="content" placeholder="Type your content here..."></textarea>
 		</div>
 		<div class="field">
 			<div id="container"></div>
 			<button id="but" class="btn btn-default" onclick="call_drop()">Dropbox</button>
 			<button id="save_but" class="btn btn-primary btn-sm" onclick="call_save()">Save</button>
 			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
-			<br>
+			<!--<button type="button" class="btn btn-default" aria-label="Select a theme">
+	-->
+	<span class="glyphicon glyphicon-leaf" aria-hidden="true" ></span>
+	
+	<select onChange="selee()" id="select">
+	<option selected>default</option>
+    <option>ambiance</option>
+    <option>chaos</option>
+    <option>chrome</option>
+    <option>clouds</option>
+    <option>cobalt</option>
+    <option>dawn</option>
+    <option>eclipse</option>
+    <option>github</option>
+    <option>kuroir</option>
+    <option>twilight</option>
+    <option>merbivore</option>
+    <option>crimson_editor</option>
+    <option>dreamweaver</option>
+    <option>idle_fingers</option>
+    <option>katzenmilch</option>
+    <option>kr_theme</option>
+    <option>monokai</option>
+    <option>tomorrow</option>
+    <option>solarized_light</option>
+    <option>terminal</option>
+    <option>textmate</option>
+    <option>vibrant_ink</option>
+    <option>xcode</option>
+	</select>
+	
+	<span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
+	
+	<select onchange="selmod()" id="selectMode">
+	<option selected>javascript</option>
+    <option>c_cpp</option>
+    <option>coffee</option>
+    <option>csharp</option>
+    <option>css</option>
+    <option>django</option>
+    <option>html</option>
+    <option>java</option>
+    <option>json</option>
+	<option>latex</option>
+	<option>matlab</option>
+	<option>mysql</option>
+	<option>objectivec</option>
+	<option>perl</option>
+	<option>php</option>
+	<option>python</option>
+	<option>r</option>
+	<option>ruby</option>
+	<option>tcl</option>
+	<option>vbscript</option>
+	<option>verilog</option>
+	<option>xml</option>
+	</select>
 			</div>
 	
 		
 	</div>
 	
-	
+			
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="js/main.js"></script>	
 	<script src="open_files.js"></script>
 	<script src="save_files.js"></script>
 	<script src="js/script.js"></script>
-
-<div class="navbar navbar-inverse navbar-fixed-bottom">
-   <div class="navbar-inner">
-       <div class="container">
-           <div class="nav-collapse collapse">
-               <ul class="nav pull-left"> 
-                    <li><a id="" style="cursor:pointer;color:#EFEFEF;"><b>Developers :</b></a></li>               
-                    <li><a id="gp" style="cursor:pointer;color:#EFEFEF;">Gaurav Pandvia</a></li>
-                    <li><a id="sg" style="cursor:pointer;color:#EFEFEF;">Saurabh Garg</a></li>
-                    <li><a id="sm" style="cursor:pointer;color:#EFEFEF;">Shikher Mishra</a></li>
-               </ul>
-               <ul class="nav pull-right">
-                    <li><a id="" style="cursor:pointer;color:#EFEFEF;"><b>Get Social :</b></a></li>               
-                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">FB</a></li>
-                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">GO</a></li>
-                    <li><a id="" style="cursor:pointer;color:#EFEFEF;">Tw</a></li>
-               </ul>
-           </div>
-       </div>
-   </div>
-</div>
-
 	
 </body>
 <div id="fade_div"></div>
