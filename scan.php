@@ -52,6 +52,7 @@ function scan($dir){
 					"name" => $f,
 					"type" => "file",
 					"path" => $dir . '/' . $f,
+					"date" => date("F d Y H:i:s.",filemtime($dir.'/'.$f)),
 					"size" => filesize($dir . '/' . $f) // Gets the size of this file
 				);
 			}

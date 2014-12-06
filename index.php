@@ -75,14 +75,11 @@ else
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script src="acm/src-min/ace.js" type="text/javascript" charset="utf-8"></script>
 	<style>
-		.bg1{
-			visibility: hidden;
-		}
 		.bg2 
 		{
-		  background-image: url(img/loading.gif);
-		  background-repeat: no-repeat;
-		  background-position: center; 
+		background: linear-gradient(rgba(85, 84, 88, 0.2), rgba(93, 89, 108, 0.2)), url('img/fabric.png');
+		background-repeat: no-repeat;
+		background-position: center; 
 		}
 		
 		html,body{
@@ -196,7 +193,7 @@ else
 	</div>
 	
 	
-	<div class ="editor" style="z-index:1000">
+	<div class ="editor" id="edit1" style="z-index:1000">
 		<div class="field">
 			<input type="text" style="padding-top:20px;padding-bottom:20px;" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
 		</div>

@@ -32,7 +32,7 @@ options = {
 					
 					ajaxRequest.onreadystatechange = function(){
 						if(ajaxRequest.readyState == 4){
-							$('.editor').removeClass('bg2');
+							$('#edit1').removeClass('bg2');
 							editor.setValue(ajaxRequest.responseText);
 									}
 								}
@@ -43,7 +43,7 @@ options = {
 										link = link.slice(8,n);
 									}
 							$('#content').removeAttr('placeholder');
-							$('.editor').addClass('bg2');
+							$('#edit1').addClass('bg2');
 							
 							ajaxRequest.open("GET", "get_data.php?src="+link+"&type="+type+"/", true);	
 							ajaxRequest.send(null); 
