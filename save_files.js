@@ -40,7 +40,8 @@ function ajaxFunction_save(name,content)
 }
 function call_save()
 		{
-			var content = document.getElementById("content").value;
+//			var content = document.getElementById("content").value;
+			var content= editor.getValue();
 			var name = document.getElementById("filename").value;
 			ajaxFunction_save(name,content);
 		}
