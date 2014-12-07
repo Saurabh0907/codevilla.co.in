@@ -94,6 +94,9 @@ input.text {
 			position: absolute;
 			top:-5px;
 		}
+ 	#load_gifl
+ 	{display:none;
+ 	}
  
 </style>
 
@@ -106,8 +109,7 @@ $(document).ready( function() {
 	var z = checklogin();
 	if(z == true)
 	{
-	
-		
+		document.getElementById('load_gifl').style.display = 'block';	
 		$.ajax({
 			url:"Login_Login_db.php",
 			data: $("#LoginUserForm").serialize(),
@@ -116,6 +118,7 @@ $(document).ready( function() {
 				//alert(txt);
 				if(txt == '1')
 				{
+				document.getElementById('load_gifl').style.display = 'none';
 				alert("Logged In Successfully");
 				$("#fade_div").css({"display":"none"});
 				$("#loginform_div").css({"display":"none"});
@@ -124,6 +127,7 @@ $(document).ready( function() {
 				}
 				else
 				{
+				document.getElementById('load_gifl').style.display = 'none';
 				alert("Invalid Username Or Password");
 				}
 			},
@@ -158,6 +162,7 @@ $(document).ready( function() {
                 
         <p>
 			<!--<a title="Forgot Password" id="forgot" ><img src="images/password.png"></img></a>-->
+			<img id="load_gifl" src="img/loading.gif" style="height:40px;width:40px;"></img>
 			<button id="LoginOld" type="submit" >Login</button>
         </p>
  	</fieldset>

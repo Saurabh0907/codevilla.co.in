@@ -12,7 +12,7 @@ html{margin: 0; padding: 0; border: none;}
 
         #registration {
 				position:absolute;
-				margin-top:7%;
+				margin-top:4%;
 				margin-left:31%;
 				font-family:sans-serif; 
 				font-size: 12px;
@@ -108,6 +108,10 @@ input.text {
 			position: absolute;
 			top:3px;
 		}
+		
+	#load_gifr
+ 	{display:none;
+ 	}
  
 </style>
 <script>
@@ -116,18 +120,26 @@ $(document).ready( function() {
 	event.preventDefault();
 	var z = checkform();
 	if(z == true)
-	{
-	
-		
+	{	
+		document.getElementById('load_gifr').style.display = 'block';
 		$.ajax({
 			url:"Reg_Login_db.php",
 			data: $("#RegisterUserForm").serialize(),
 			type:"POST",
 			success: function(txt) {
-				alert(txt);
-				$("#fade_div").css({"display":"none"});
-				$("#registerform_div").css({"display":"none"});
-				document.getElementById("RegisterUserForm").reset();
+				if(txt=='1')
+				{
+					document.getElementById('load_gifr').style.display = 'none';
+					alert("Registered Successfully");
+					$("#fade_div").css({"display":"none"});
+					$("#registerform_div").css({"display":"none"});
+					document.getElementById("RegisterUserForm").reset();
+				}
+				else
+				{
+					document.getElementById('load_gifr').style.display = 'none';
+					alert("EMAIL ADDRESS DOESN'T EXIST");
+				}
 			},
 			error: function(txt) {
 				console.log(txt);
@@ -169,6 +181,7 @@ $(document).ready( function() {
         
         <p>
 			<!--<a href="javascript:ajaxpage('login.php','main_reg');" title="Already A User" id="Old_User" class="logleft flip" style="left: 0px; opacity: 1;"></a>-->
+			<img id="load_gifr" src="img/loading.gif" style="height:40px;width:40px;"></img>
             <button id="registerNew" type="submit" name="continue" value="submit" onClick="return checkform();">Register</button>
         </p>
  	</fieldset>

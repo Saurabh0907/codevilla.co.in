@@ -10,13 +10,14 @@ if (!$db_selected) {
 }
 
 $x = $_POST['email'];
+	$x = mysql_escape_string($x);
 $y = $_POST['password'];
 
 
 $new = strrev($y);
 $password = hash("sha512", $new); 
 
-$login = mysql_query("SELECT * FROM user WHERE email='$x' and password='$password'");
+$login = mysql_query("SELECT * FROM user1 WHERE email='$x' and password='$password'");
 $x = mysql_fetch_assoc($login);
 if (mysql_num_rows($login) == 1) 
 {
