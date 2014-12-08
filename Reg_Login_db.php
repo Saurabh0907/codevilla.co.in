@@ -49,7 +49,7 @@ if (!$db_selected) {
 		$email = htmlentities($_POST['email']);
 			$email = mysql_escape_string($email);
 		$password = htmlentities($_POST['password']);
-
+//here
 
 	$username	= 'saurabhgarg09';
 	$password	= 'codevilla.co.in';
@@ -65,7 +65,9 @@ if (!$db_selected) {
 	}	
 
 	else
-	{	$id = rand();
+	{	
+	//here
+	$id = rand();
 		$id = $id."";
 		$id = $name.$id;
 		
