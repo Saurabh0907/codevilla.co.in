@@ -17,6 +17,9 @@ Real time editing and coding of your file.
 ---------------
 Linking with dropbox such that you can open any code stored in your dropbox cloud and after your work is over, you can save it back too.
 
+4.Syntax Highlighting
+---------------
+Integrationof ACE editor in order to highlight syntax of different languages
 Feel Free to contact me 
 =======================
 
