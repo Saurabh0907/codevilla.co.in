@@ -1,3 +1,36 @@
+#textareasg {
+	background-color:WHITE;
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 98%;
+    max-height:90px;
+    max-width:98%;
+    }
+
+#textareasg1{
+	background-color:WHITE;
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 50px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 98%;
+    max-height:90px;
+    max-width:98%;
+    }
+
+
 #fade_div
 {
 margin-top:-5%;
@@ -46,4 +79,8 @@ width:100%;
 display:none;
 position:fixed;
 z-index:1006;
+}
+
+#response {
+    display: none;
 }
