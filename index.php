@@ -208,61 +208,63 @@ else
 			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
 			<!--<button type="button" class="btn btn-default" aria-label="Select a theme">
 	-->
-	<span class="glyphicon glyphicon-leaf" aria-hidden="true" ></span>
+					<span class="glyphicon glyphicon-leaf" aria-hidden="true" ></span>
 	
-	<select onChange="selee()" id="select">
-	<option selected>default</option>
-    <option>ambiance</option>
-    <option>chaos</option>
-    <option>chrome</option>
-    <option>clouds</option>
-    <option>cobalt</option>
-    <option>dawn</option>
-    <option>eclipse</option>
-    <option>github</option>
-    <option>kuroir</option>
-    <option>twilight</option>
-    <option>merbivore</option>
-    <option>crimson_editor</option>
-    <option>dreamweaver</option>
-    <option>idle_fingers</option>
-    <option>katzenmilch</option>
-    <option>kr_theme</option>
-    <option>monokai</option>
-    <option>tomorrow</option>
-    <option>solarized_light</option>
-    <option>terminal</option>
-    <option>textmate</option>
-    <option>vibrant_ink</option>
-    <option>xcode</option>
-	</select>
+					<select onChange="selee()" id="select">
+					<option selected>default</option>
+					<option>ambiance</option>
+					<option>chaos</option>
+					<option>chrome</option>
+					<option>clouds</option>
+					<option>cobalt</option>
+					<option>dawn</option>
+					<option>eclipse</option>
+					<option>github</option>
+					<option>kuroir</option>
+					<option>twilight</option>
+					<option>merbivore</option>
+					<option>crimson_editor</option>
+					<option>dreamweaver</option>
+					<option>idle_fingers</option>
+					<option>katzenmilch</option>
+					<option>kr_theme</option>
+					<option>monokai</option>
+					<option>tomorrow</option>
+					<option>solarized_light</option>
+					<option>terminal</option>
+					<option>textmate</option>
+					<option>vibrant_ink</option>
+					<option>xcode</option>
+					</select>
 	
-	<span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
+					<span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
 	
-	<select onchange="selmod()" id="selectMode">
-	<option selected>javascript</option>
-    <option>c_cpp</option>
-    <option>coffee</option>
-    <option>csharp</option>
-    <option>css</option>
-    <option>django</option>
-    <option>html</option>
-    <option>java</option>
-    <option>json</option>
-	<option>latex</option>
-	<option>matlab</option>
-	<option>mysql</option>
-	<option>objectivec</option>
-	<option>perl</option>
-	<option>php</option>
-	<option>python</option>
-	<option>r</option>
-	<option>ruby</option>
-	<option>tcl</option>
-	<option>vbscript</option>
-	<option>verilog</option>
-	<option>xml</option>
-	</select>
+					<select onchange="selmod()" id="selectMode">
+					<option selected>javascript</option>
+					<option>c_cpp</option>
+					<option>coffee</option>
+					<option>csharp</option>
+					<option>css</option>
+					<option>django</option>
+					<option>html</option>
+					<option>java</option>
+					<option>json</option>
+					<option>latex</option>
+					<option>matlab</option>
+					<option>mysql</option>
+					<option>objectivec</option>
+					<option>perl</option>
+					<option>php</option>
+					<option>python</option>
+					<option>r</option>
+					<option>ruby</option>
+					<option>tcl</option>
+					<option>vbscript</option>
+					<option>verilog</option>
+					<option>xml</option>
+					</select>
+			<br><button id="" class="btn btn-primary btn-sm" onclick="">Compile</button>
+			
 			</div>
 	
 		
