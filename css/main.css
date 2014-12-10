@@ -1,3 +1,56 @@
+#textarea1 {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 98%;
+    max-width:98%;
+    max-height:90px;
+    background-color:WHITE;
+}
+
+#response {
+    margin: 5px 0 0 0;
+    border: 1px solid orange;
+    padding: 3px;
+    display: none;
+    background-color:WHITE;
+     width: 98%;
+    max-width:98%;
+}
+
+.loading {
+    background: url('loading.gif') no-repeat;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+}
+
+.meta {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 0 0 10px;
+}
+
+.output, pre {
+    font-size: 12px;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.output {
+    overflow: auto;
+    max-height: 90px;
+}
+
+#load_gif_id
+ 	{display:none;
+ 	}
+
 #fade_div
 {
 margin-top:-5%;
