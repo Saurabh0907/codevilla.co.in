@@ -81,35 +81,6 @@ position:fixed;
 z-index:1006;
 }
 
-//IDEONE
-
 #response {
-    margin: 20px 0 0 0;
-    border: 2px solid orange;
-    padding: 10px;
     display: none;
-}
-
-.meta {
-    border-bottom: 1px solid #CCCCCC;
-    font-size: 12px;
-    margin-bottom: 10px;
-    padding: 0 0 10px;
-}
-
-.output, pre {
-    font-size: 13px;
-    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-}
-
-.output {
-    overflow: auto;
-    max-height: 500px;
-}
-
-.cmpinfo {
-    border-bottom: 1px solid #CCCCCC;
-    font-size: 12px;
-    margin-bottom: 10px;
-    padding: 0 0 10px;
 }
