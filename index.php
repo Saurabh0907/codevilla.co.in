@@ -94,7 +94,7 @@ else
 		
 		function call_clear()
 		{
-		document.getElementById('content').value = "";
+		editor.setValue("");
 		document.getElementById('filename').value = "";
 		}
 
