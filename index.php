@@ -193,7 +193,7 @@ else
 	</div>
 	
 	
-	<div class ="editor" id="edit1" style="z-index:1000;/*margin-top:-2%;*/">
+	<div class ="editor" id="edit1" style="z-index:1000">
 		<div class="field">
 			<input type="text" style="padding-top:20px;padding-bottom:20px;" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
 		</div>
@@ -202,16 +202,15 @@ else
 			
 		</div>
 		<div class="field">
-		 <form id="code" action="#" method="post">
 			<div id="container"></div>
 			<button id="but" class="btn btn-default" onclick="call_drop()">Dropbox</button>
 			<button id="save_but" class="btn btn-primary btn-sm" onclick="call_save()">Save</button>
 			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
 			<!--<button type="button" class="btn btn-default" aria-label="Select a theme">
 	-->
-					<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+					<span class="glyphicon glyphicon-leaf" aria-hidden="true" ></span>
 	
-					<select onChange="selee()" id="select" style="width:26%;">
+					<select onChange="selee()" id="select">
 					<option selected>default</option>
 					<option>ambiance</option>
 					<option>chaos</option>
@@ -240,9 +239,9 @@ else
 	
 					<span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
 	
-					<select onchange="selmod()" id="selectMode" name="lang" class="lang" style="width:26%;">
-					<option selected >javascript</option>
-					<option >C,C++</option>
+					<select onchange="selmod()" id="selectMode">
+					<option selected>javascript</option>
+					<option>c_cpp</option>
 					<option>coffee</option>
 					<option>csharp</option>
 					<option>css</option>
@@ -264,16 +263,9 @@ else
 					<option>verilog</option>
 					<option>xml</option>
 					</select>
+			<br><button id="" class="btn btn-primary btn-sm" onclick="">Compile</button>
 			
-			<!--<input type="submit" class="btn btn-primary btn-sm" name="Submit" value="Compile" />
-			<br><br>
-			 <label for="input" class="lead">Input: <span class="lead description">(Data that will be given to the program on the stdin.)</span></label>
-			<div id="textareasg" name="input" class="lead" contenteditable></div>
-            <div id="response">
-				<label for="input" class="lead">Output:</label>
-				<div id="textareasg1" class="lead output" contenteditable></div>
-			</div>-->
-			</form></div>
+			</div>
 	
 		
 	</div>
@@ -284,7 +276,6 @@ else
 	<script src="open_files.js"></script>
 	<script src="save_files.js"></script>
 	<script src="js/script.js"></script>
-<!--	<script src="script_ideone.js"></script>-->
 	
 </body>
 <div id="fade_div"></div>
