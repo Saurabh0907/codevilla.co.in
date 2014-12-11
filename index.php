@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-include 'Database_Connect1.php';
+include 'Database_Connect.php';
 
 if (isset($_SESSION['user_id']))
 {
@@ -193,7 +193,7 @@ else
 	</div>
 	
 	 
-	<div class ="editor" id="edit1" style="z-index:1000;margin-top:-4%;">
+	<div class ="editor" id="edit1" style="z-index:1000;margin-top:-2%;">
 		<div class="field">
 			<input type="text" style="padding-top:20px;padding-bottom:20px;" name="filename" id="filename" placeholder="Filename (e.g. treehouse.txt)">
 		</div>
@@ -270,8 +270,8 @@ else
 			<button id="save_but" class="btn btn-primary btn-sm" onclick="call_save()">Save</button>
 			<button id="clear_but" class="btn btn-primary btn-sm" onclick="call_clear()">Clear</button>
 			
-			<br><br><label for="input" class="lead">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
-			<div id="textarea1" contenteditable name="input1" id="input1"></div>
+		<!--	<br><br><label for="input" class="lead">Input: <span class="description">(Data that will be given to the program on the stdin.)</span></label>
+			<div id="textarea1" contenteditable name="input1" id="input1"></div>-->
 			<img id="load_gif_id" src="img/loading.gif" style="margin-left:48%;margin-top:2%;margin-bottom:2%;height:50px;width:50px;"></img>
 				 <div id="response">
 					<label for="input" class="lead">Output:</label>

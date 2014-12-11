@@ -1,14 +1,6 @@
 <?php
-$link = mysql_connect('mysql.hostinger.in', 'u887678322_root', 'majorproject');
-if (!$link) {
-    die('Could not connect: ' . mysql_error());
-}
+include 'Database_Connect.php';
 
-
-$db_selected = mysql_select_db('u887678322_code1', $link);
-if (!$db_selected) {
-    die ('Can\'t use Codeonline : ' . mysql_error());
-}
 		
 		$name = htmlentities($_POST['name']);
 			$name = mysql_escape_string($name);

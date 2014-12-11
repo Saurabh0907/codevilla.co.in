@@ -15,6 +15,7 @@
 }
 
 #response {
+
     margin: 5px 0 0 0;
     border: 1px solid orange;
     padding: 3px;
@@ -22,6 +23,9 @@
     background-color:WHITE;
      width: 98%;
     max-width:98%;
+    	margin-top:5%;
+    	overflow-y: scroll; 
+    	height:30%;
 }
 
 .loading {
@@ -99,4 +103,13 @@ width:100%;
 display:none;
 position:fixed;
 z-index:1006;
+}
+
+#textarea2
+{
+height: 28px;
+    padding: 2px;
+    width: 98%;
+    max-width:98%;
+    max-height:90px;
 }

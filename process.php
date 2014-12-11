@@ -31,7 +31,7 @@ $error = array(
 $x=1;
 if ( $x==1 ) {
     $lang = isset( $_POST['lang1'] ) ? intval( $_POST['lang1'] ) : 1;
-    $input = trim( $_POST['input1'] );
+  //  $input = trim( $_POST['input1'] );
     $code = trim( $_POST['content'] );
 
     $client = new SoapClient( "http://ideone.com/api/1/service.wsdl" );
