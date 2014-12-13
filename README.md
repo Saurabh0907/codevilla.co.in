@@ -19,7 +19,12 @@ Linking with dropbox such that you can open any code stored in your dropbox clou
 
 4.Syntax Highlighting
 ---------------
-Integrationof ACE editor in order to highlight syntax of different languages
+Integration of ACE editor in order to highlight syntax of different languages
+
+5.Compiler
+---------------
+Integration of IDEONE compiler with the languages  which can be highlighted by the editor.
+
 Feel Free to contact me 
 =======================
 
