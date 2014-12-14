@@ -75,7 +75,7 @@ else
 {
 		if(isset($authUrl)) //user is not logged in, show login button
 		{
-			echo '<a class="login" href="'.$authUrl.'"><img src="images/google-login-button.png" /></a>';
+			echo '<a class="login" href="'.$authUrl.'"><img src="img/goog.png" /></a>';
 		} 
 		else // user logged in 
 		{
