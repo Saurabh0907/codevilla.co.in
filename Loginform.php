@@ -3,6 +3,33 @@
 <title></title>
 
 <script src="js/Login_formvalidation.js"></script>
+<script src="https://apis.google.com/js/client:platform.js" async defer></script>
+<script src = "https://plus.google.com/js/client:plusone.js"></script>
+
+<script>
+
+function noop() {};
+
+  function onSignInCallback(resp) {
+    gapi.client.load('plus', 'v1', apiClientLoaded);
+  }
+
+  function apiClientLoaded() {
+    gapi.client.plus.people.get({userId: 'me'}).execute(handleEmailResponse);
+  }
+  function handleEmailResponse(resp) {
+    var primaryEmail;
+    for (var i=0; i < resp.emails.length; i++) {
+      if (resp.emails[i].type === 'account') primaryEmail = resp.emails[i].value;
+    }
+//    alert(primaryEmail);
+	
+    window.location = "googleSignIn.php?email="+primaryEmail+"&name1="+resp.result.displayName;
+    handleEmailResponse = noop;
+  }
+
+
+</script>
 <style type="text/css">
 
 
@@ -154,9 +181,9 @@ $(document).ready( function() {
 
 <div id="login">
  <h2>Login</h2>
-
- <form autocomplete="off" id="LoginUserForm" name="LoginUserForm" action="Login_Login_db.php" autocomplete="off">
- 	<fieldset>
+<fieldset>
+ <form autocomplete="off" id="LoginUserForm" name="LoginUserForm" action="Login_Login_db.php" style="display: inline;">
+ 	
         <p><input autocomplete="off" id="email" name="email" type="email" class="text"  value="" placeholder="Email"/></p>
         <p><input autocomplete="off" id="password" name="password" class="text" type="password" placeholder="Password"/></p>
                 
@@ -165,9 +192,20 @@ $(document).ready( function() {
 			<img id="load_gifl" src="img/loading.gif" style="height:40px;width:40px;"></img>
 			<button id="LoginOld" type="submit" >Login</button>
         </p>
- 	</fieldset>
-
  </form>
+ 
+ 
+ <div id="gConnect" class="button">
+      <button class="g-signin"
+          data-scope="email"
+          data-clientid="810701280707-1bdsrkcl9mc5eb2aojb1jmarguarol4o.apps.googleusercontent.com"
+          data-callback="onSignInCallback"
+          data-theme="dark"
+          data-cookiepolicy="single_host_origin">
+      </button>
+      </div>
+</fieldset>
+
 </div>
 
 </body>
