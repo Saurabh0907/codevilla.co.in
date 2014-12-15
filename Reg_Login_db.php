@@ -69,7 +69,8 @@ if (!$db_selected) {
 	//here
 	$id = rand();
 		$id = $id."";
-		$id = $name.$id;
+		$nm1 = str_replace(" ","", $name);
+		$id = $nm1.$id;
 		
 		$path = 'files/'.$id.'/';
 		
