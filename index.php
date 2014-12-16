@@ -44,7 +44,7 @@ $(document).ready(function() { //When the document loads
           </button>    
     
     <!-- <a class="brand" href="/"><em>Au</em>thorea</a> -->
-    <a href="" onclick="window.location.reload();"><i class="brand"><img src="c.png" style="height:45px"></i></a>
+    <a href="" onclick="window.location.reload();"><i class="brand"><img src="img/c.png" style="height:45px"></i></a>
 
         
       <div class="nav-collapse collapse pull-right">
@@ -73,7 +73,7 @@ $(document).ready(function() { //When the document loads
 
         <center>
           <a class="btn btn btn-start-now btn-inverse" type="submit" href="http://codevilla.co.in/editor/">
-            <i class="icon-pencil"></i>Start writing now</a>
+            <i class="icon-pencil"></i>Get Started</a>
         </form> 
         </center>
 
@@ -108,11 +108,14 @@ $(document).ready(function() { //When the document loads
 
     <li class="span3 contact-thumb-li">
       <div class="thumbnail">
-        <img src="c.png"></a>
+        <img src="img/c.png" style="height:25px;opacity:0.1;">
         <div class="caption">
           <address>
-            <strong>GAURAV PANDIYA</strong><br>
-            <br>
+            <strong>GAURAV PANDVIA</strong>
+			<img src="img/gp.jpg" alt="Gaurav Pandvia"/><br><br>
+			<a target="_blank" href="https://www.facebook.com/gaurav.pandvia"><img src="img/fb.png" style="height:25px;width:25px;"/></a>&nbsp &nbsp
+            <a target="_blank" href="https://www.linkedin.com/profile/view?id=317368964&authType=NAME_SEARCH&authToken=xw0Y&locale=en_US&srchid=1442910601418754652729&srchindex=1&srchtotal=3&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1442910601418754652729%2CVSRPtargetId%3A317368964%2CVSRPcmpt%3Aprimary"><img src="img/in.png" style="height:25px;width:25px;"/></a>
+            
               </address>
         </div>
       </div>
@@ -120,11 +123,14 @@ $(document).ready(function() { //When the document loads
 
     <li class="span3 contact-thumb-li">
       <div class="thumbnail">
-        <img src="c.png">
+        <img src="img/c.png" style="height:25px;opacity:0.1;">
         <div class="caption">
           <address>
-            <strong>SAURABH GARG</strong><br>
-            <br>
+            <strong>SAURABH GARG</strong>
+            <img src="img/sg.jpg" alt="Saurabh Garg"/><br><br>
+            <a target="_blank" href="https://www.facebook.com/SaurabhGarg09"><img src="img/fb.png" style="height:25px;width:25px;"/></a>&nbsp &nbsp
+            <a target="_blank" href="https://github.com/Saurabh0907"><img src="img/git.png" style="height:25px;width:25px;"/></a>&nbsp &nbsp
+            <a target="_blank" href="http://in.linkedin.com/in/saurabhgarg09"><img src="img/in.png" style="height:25px;width:25px;"/></a>
             
           </address>
         </div>
@@ -133,12 +139,14 @@ $(document).ready(function() { //When the document loads
 
     <li class="span3 contact-thumb-li">
       <div class="thumbnail">
-        <img src="c.png"></a>
+        <img src="img/c.png" style="height:25px;opacity:0.1;">
         <div class="caption">
           <address>
             <strong>SHIKHER MISHRA</strong><br>
-            <br>
-            <br>
+			<img src="img/sm1.jpg" alt="Sihkher Mishra"/><br><br>
+			<a target="_blank" href="https://www.facebook.com/shikher.mishra.1"><img src="img/fb.png" style="height:25px;width:25px;"/></a>&nbsp &nbsp
+            <a target="_blank" href="https://www.linkedin.com/profile/view?id=176886082&authType=name&authToken=scL9&trk=prof-proj-cc-name"><img src="img/in.png" style="height:25px;width:25px;"/></a>
+            
           </address>
         </div>
       </div>
