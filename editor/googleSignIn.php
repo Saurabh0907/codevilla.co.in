@@ -66,7 +66,7 @@ $name = $_SESSION['sg_name'];
 unset($_SESSION['sg_email']);
 unset($_SESSION['sg_name']);
 
-$url = 'http://codevilla.co.in';
+$url = 'http://codevilla.co.in/editor/';
 $login = mysql_query("SELECT * FROM user1 WHERE email='$email' and name='$name'");
 $x = mysql_fetch_assoc($login);
 if (mysql_num_rows($login) == 1) 

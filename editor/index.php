@@ -5,7 +5,7 @@ include 'Database_Connect1.php';
 
 $google_client_id 		= '810701280707-1bdsrkcl9mc5eb2aojb1jmarguarol4o.apps.googleusercontent.com';
 $google_client_secret 	= 'plOD17tL-yePWlXxiuuR_50K';
-$google_redirect_url 	= 'http://codevilla.co.in/'; //path to your script
+$google_redirect_url 	= 'http://codevilla.co.in/editor/'; //path to your script
 //$google_developer_key 	= 'AIzaSyClZ8F_yydGw3gn1sHM4mMW7ChDoSavHtkk';
 
 //include google api files
@@ -83,7 +83,7 @@ else
 		echo $email;
 		$_SESSION['sg_email'] = $email;
 		$_SESSION['sg_name'] = $user_name;
-		header('Location: http://codevilla.co.in/googleSignIn.php');
+		header('Location: http://codevilla.co.in/editor/googleSignIn.php');
 
 
 	
@@ -263,7 +263,7 @@ else
 <div class="navbar navbar-inverse navbar-fixed-top">
    <div class="navbar-inner">
        <div class="container">
-           <a class="brand" style="color:#EFEFEF;margin-left:-15%;"><img onclick="window.location.reload()" style="cursor:pointer;margin-top:-1%;" alt="Brand" src="img/c3.png">&nbsp<b>CodeVilla - A House where you can Code</b></a>
+           <a class="brand" style="color:#EFEFEF;margin-left:-15%;" href="http://www.codevilla.co.in/"><img style="cursor:pointer;margin-top:-1%;" alt="Brand" src="img/c3.png">&nbsp<b>CodeVilla - A House where you can Code</b></a>
            <div class="nav-collapse collapse">
                <ul class="nav pull-right">
                     <li><a id="register1" style="cursor:pointer;color:#EFEFEF;">Register</a></li>

@@ -44,5 +44,5 @@ if (!$db_selected) {
 					  }
 					  
 					echo '1';
-					header('Location: http://codevilla.co.in');
+					header('Location: http://codevilla.co.in/editor');
 ?>
