@@ -1,0 +1,115 @@
+#textarea1 {
+    -moz-appearance: textfield-multiline;
+    -webkit-appearance: textarea;
+    border: 1px solid gray;
+    font: medium -moz-fixed;
+    font: -webkit-small-control;
+    height: 28px;
+    overflow: auto;
+    padding: 2px;
+    resize: both;
+    width: 98%;
+    max-width:98%;
+    max-height:90px;
+    background-color:WHITE;
+}
+
+#response {
+
+    margin: 5px 0 0 0;
+    border: 1px solid orange;
+    padding: 3px;
+    display: none;
+    background-color:WHITE;
+     width: 98%;
+    max-width:98%;
+    	margin-top:5%;
+    	overflow-y: scroll; 
+    	height:30%;
+}
+
+.loading {
+    background: url('loading.gif') no-repeat;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+}
+
+.meta {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 12px;
+    margin-bottom: 2px;
+    padding: 0 0 10px;
+}
+
+.output, pre {
+    font-size: 12px;
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+}
+
+.output {
+    overflow: auto;
+    max-height: 90px;
+}
+
+#load_gif_id
+ 	{display:none;
+ 	}
+
+#fade_div
+{
+margin-top:-5%;
+opacity:0.9;
+height:90%;
+width:100%;
+z-index:1005;
+background-color:#1d1711;
+display:none;
+position:fixed;
+}
+
+#x_img1
+{
+cursor:pointer
+margin-top:0px;
+margin-right:0px;
+z-index:1011;
+cursor: pointer;
+}
+
+#x_img2
+{
+cursor:pointer
+margin-top:0px;
+margin-right:0px;
+z-index:1011;
+cursor: pointer;
+}
+
+#loginform_div
+{
+margin-top:-5%;
+height:90%;
+width:100%;
+display:none;
+position:fixed;
+z-index:1006;
+}
+
+#registerform_div
+{
+margin-top:-5%;
+height:90%;
+width:100%;
+display:none;
+position:fixed;
+z-index:1006;
+}
+
+#textarea2
+{
+height: 28px;
+    padding: 2px;
+    width: 98%;
+    max-width:98%;
+    max-height:90px;
+}
