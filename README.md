@@ -25,6 +25,10 @@ Integration of ACE editor in order to highlight syntax of different languages
 ---------------
 Integration of IDEONE compiler with the languages  which can be highlighted by the editor.
 
+6.GOOGLE Sign in
+---------------
+Login with your existing google account and enjoy coding.
+
 Feel Free to contact me 
 =======================
 
