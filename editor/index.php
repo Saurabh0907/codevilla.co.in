@@ -337,9 +337,10 @@ else
 	
 							<span class="glyphicon glyphicon-th-large" aria-hidden="true" ></span>
 	
-					   <select name="lang1" id="lang1" style="width:26%;">
+					   <select onchange="selmod()" name="lang1" id="lang1" style="width:26%;">
 			   
-							<option value="1" selected="selected">c_cpp</option>
+							<option value="35" selected="selected">DEFAULT</option>
+							<option value="1">c_cpp</option>
 							<option value="27">csharp</option>
 							<option value="35">javascript</option>
 							<option value="10">java</option>
