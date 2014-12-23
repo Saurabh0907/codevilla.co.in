@@ -167,7 +167,7 @@ input.text {
 }	  
 
 
- input#email { 
+ input#email12 { 
  	margin:2%;
  	background-position: 4px 5px;
 	}
@@ -177,7 +177,7 @@ input.text {
  	background-position: 4px -20px, 0px 0px;
 	}
 	
- input#name {  
+ input#name12 {  
  	margin:2%;
  	background-position: 4px -46px, 0px 0px; 
 	}
@@ -252,11 +252,11 @@ input.text {
 
  <form autocomplete="off" id="RegisterUserForm12" name="RegisterUserForm" action="Reg_Login_db1.php" method="POST" autocomplete="off">
  	<fieldset>
-        <p><input autocomplete="off" id="name12" name="name" type="text" class="text" value="" placeholder="Name"/></p>
+        <p><input autocomplete="off" id="name12" name="name" type="text" class="text" value="" placeholder="Name" readonly/></p>
         
 		<p><input autocomplete="off" id="tel" name="tel" type="tel" class="text" value="" placeholder="Phone Number"/></p>
         
-        <p><input autocomplete="off" id="email12" name="email" type="email" class="text" value="" placeholder="Email"/></p>
+        <p><input autocomplete="off" id="email12" name="email" type="email" class="text" value="" placeholder="Email" readonly/></p>
         
         <p><input autocomplete="off" id="password" name="password" class="text" type="password" placeholder="Password"/></p>
 		<p> First character must be a letter, must contain numeric digits and characters only </p>
