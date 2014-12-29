@@ -154,7 +154,7 @@ $(document).ready(function() { //When the document loads
         <div class="caption">
           <address>
             <strong>GAURAV PANDVIA</strong>
-			<img src="img/gp.jpg" alt="Gaurav Pandvia"/><br><br>
+			<img src="img/g2.jpg" alt="Gaurav Pandvia"/><br><br>
 			<a target="_blank" href="https://www.facebook.com/gaurav.pandvia"><img src="img/fb.png" style="height:25px;width:25px;"/></a>&nbsp &nbsp
             <a target="_blank" href="https://www.linkedin.com/profile/view?id=317368964&authType=NAME_SEARCH&authToken=xw0Y&locale=en_US&srchid=1442910601418754652729&srchindex=1&srchtotal=3&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A1442910601418754652729%2CVSRPtargetId%3A317368964%2CVSRPcmpt%3Aprimary"><img src="img/in.png" style="height:25px;width:25px;"/></a>
             
